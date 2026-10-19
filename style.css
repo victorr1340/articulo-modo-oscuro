@@ -1,0 +1,142 @@
+/* RESETEO BÁSICO Y ESTILOS GLOBALES */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #e9ecef;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor-global {
+    max-width: 950px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+}
+
+#cabecera-articulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#titulo-principal {
+    color: #1a1a1a;
+    font-size: 2.6em;
+    border-bottom: 3px solid #6366f1;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.seccion-articulo {
+    margin-bottom: 45px;
+}
+
+.subtitulo {
+    color: #4f46e5;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.15em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+.img-fluida {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.imagen-banner {
+    margin-top: 20px;
+}
+
+.img-flotante-izq {
+    float: left;
+    width: 35%;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.2);
+}
+
+.limpiar-flotado {
+    clear: both; 
+}
+
+#galeria-flex {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.item-flex {
+    flex: 1; 
+}
+
+.contenedor-centrado {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.img-circular {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 6px solid #4f46e5;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+.footer-enlaces {
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.footer-enlaces h3 {
+    margin-top: 0;
+    color: #818cf8;
+}
+
+.lista-enlaces {
+    padding-left: 20px;
+}
+
+.lista-enlaces li {
+    margin-bottom: 12px;
+}
+
+.lista-enlaces a {
+    color: #a5b4fc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.lista-enlaces a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #galeria-flex {
+        flex-direction: column;
+    }
+    .img-flotante-izq {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    .img-circular {
+        width: 250px;
+        height: 250px;
+    }
+}
